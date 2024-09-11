@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: josefin sans;
+}
+h2{
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    color: #000;
+}
+
+
+.header {
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width to span across the page */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+}
+
+.logo {
+    margin-top: 7px;
+    width: 180px;
+    height: 50px;
+}
+
+.personal_details {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto; /* Center the container horizontally */
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+.personal_details h2 {
+    margin-top: 0px;
+}
+.objective_details {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto; /* Center the container horizontally */
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+.objective_details h2 {
+    margin-top: -40px;
+}
+.education_details {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto; /* Center the container horizontally */
+    border-radius: 5px;
+    max-width: 800px;
+}
+.education_details h2 {
+    margin-top: -40px;
+}
+
+
+.fields-container {
+    display: flex;
+    gap: 20px; /* Adjust gap between fields as needed */
+    margin-bottom: 10px;
+}
+
+.field {
+    flex: 1;
+    position: relative;
+}
+
+.field input, .field textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 120px; /* Adjust this value to ensure label fits */
+    border: 1px solid #C4F9C6; /* Border color */
+    border-radius: 3px;
+    background-color: #C4F9C6; /* Background color */
+    color: #000; /* Text color */
+    box-sizing: border-box;
+}
+.field textarea#Keywords{
+    
+    margin-top: 20px;
+}
+
+.field::before {
+    content: attr(data-label); /* Display the label text */
+    position: absolute;
+    left: 10px; /* Position of the label */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000; /* Label text color */
+    pointer-events: none;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+textarea {
+    resize: vertical; /* Allows users to resize the height of the textarea */
+    min-height: 50px; /* Minimum height of the textarea */
+    padding: 0px 10px 10px; /* Add padding to ensure text is not touching the edges */
+    box-sizing: border-box; /* Ensures padding is included in the total width/height */
+    vertical-align: top; /* Aligns text to the top of the textarea */
+}
+.skills_details {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto; /* Center the container horizontally */
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+.skills_details h2 {
+    margin-top: -40px;
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #C4F9C6;
+    border-radius: 3px;
+    background-color: #C4F9C6;
+}
+
+.selected-skills span {
+    background-color: #fff;
+    border: 1px solid #C4F9C6;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.skill-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-option {
+    background-color: #C4F9C6;
+    border: 1px solid #C4F9C6;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.skill-option:hover {
+    background-color: #b0f3a7;
+}
+
+.custom-skill-section {
+    margin-top: 10px;
+}
+
+#custom-skill-input {
+    padding: 10px;
+    border: 1px solid #C4F9C6;
+    border-radius: 3px;
+    width: calc(100% - 22px);
+}
+
+#add-custom-skill-btn, #cancel-custom-skill-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#add-custom-skill-btn {
+    background-color: #C4F9C6;
+}
+
+#cancel-custom-skill-btn {
+    background-color: #f8d7da;
+}
+
+#add-custom-skill-btn:hover {
+    background-color: #b0f3a7;
+}
+
+#cancel-custom-skill-btn:hover {
+    background-color: #f5c6cb;
+}
+.select-template-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto; /* Center the button horizontally */
+}
+
+.select-template-btn {
+    padding: 10px 20px;
+    border: black;
+    border-radius: 100px;
+    background-color: #C4F9C6;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);;
+ 
+}
+
+.select-template-btn:hover {
+    background-color: #b0f3a7;
+}
+
+
+
+
+
+
